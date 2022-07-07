@@ -1,0 +1,27 @@
+.container-patch{
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 0 15px;
+   }
+   
+.view-all-post{
+    border-radius: 0%;
+    background-color: #0085A1;
+    border-color: #0085A1;
+    padding: 15px 25px;
+}   
+
+.right-arrow{
+    background-image: url('../../resources/icons/arrow_next_right_icon.png');
+    width: 20px;
+   
+}
+.btn-right-container{
+    display: flex;
+    justify-content: end;
+}
+a.view-all-post:hover{
+    color: white;
+    background-color: #0085A1;
+    border-color:#0085A1 ;
+}

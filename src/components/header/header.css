@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+/* .masthead{
+
+    background-image: url('../../resources/images/bg-index.jpeg');
+    background-size: cover;
+
+} */
+.page-heading{
+    font-family: 'Lora', 'Times New Roman', serif;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.author {
+    font-size: 80px;
+    font-weight: 40px;
+    color: white;
+}
+.subheading{
+    font-size: 24px;
+    font-weight: 300px;
+    font-family :"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color : white
+
+
+}

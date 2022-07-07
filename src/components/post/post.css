@@ -1,0 +1,55 @@
+
+.post-subtitle{
+    margin-bottom: 10px;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif ;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 33.6px;
+}
+
+.post-title{
+    font-size: 36px;
+    font-weight: 400px;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif    ;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.post-meta{
+    color :#858E96;
+    font-family: 'Lora', "Times New Roman", 'serif';
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 30px;
+}
+body {
+    background: #eef;
+  }
+  
+  a.nav_link{
+      color: black;
+  }
+  a.nav_link:link {
+    text-decoration: none;
+  }
+  
+  a.nav_link:hover {
+    /* cursor: pointer; */
+    color: #0085A1;
+  }
+  
+  /* a.nav_link:visited {
+    color: red;
+  } */
+  
+  /* a.nav_link:active {
+    color: red;
+  }
+   */
+  .nav_menu-spacer {
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    color: gray;
+  }
+ 
