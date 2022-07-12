@@ -38,9 +38,9 @@ function Navbar(){
         {/* navbar-expand-lg */}
 <nav  className={`navbar active  navbar-expand-lg ${showNavbar&&window.scrollY!==0 && 'scroll-up'} ${!showNavbar && 'hidden'} `}>
  <div className="container" style={{marginLeft:"134px",marginRight:"134px",paddingLeft:"15px",paddingRight:"15px"}}>
-   <a className="navbar-brand" href="#">
+   <Link className="navbar-brand" to="/">
        <img style={{width:"150px"}} src={require('../../resources/images/ocean_logo.png')}></img>
-   </a>
+   </Link>
    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
       <span className="navbar-toggler-icon"></span>
    </button>

@@ -104,10 +104,10 @@ function PostdetailPage(){
             <Interweave content={post.content}></Interweave>
             {/* based on current index*/ }
       <div className={displayButtonClass}>
-          <button hidden={displayButtonClass==='btn-right-container'} className="btn btn-primary navigate-btn" onClick={handlePrev}>
+          <button hidden={displayButtonClass==='btn-right-container'} className=" navigate-btn" onClick={handlePrev}>
           Previos Post
           </button>
-          <button hidden={displayButtonClass==='btn-left-container'} className="btn btn-primary navigate-btn" onClick={handleNext} >
+          <button hidden={displayButtonClass==='btn-left-container'} className="navigate-btn" onClick={handleNext} >
           Next Post →   
            </button>
         {/* <Link className="btn btn-primary navigate-btn"
