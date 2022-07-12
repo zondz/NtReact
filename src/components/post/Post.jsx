@@ -6,22 +6,15 @@ function Post(props){
     return (
         
         <article className="post-review">
-            {/* <NavLink  style={({ isActive }) => {
-              return {
-                display: "block",
-                margin: "1rem 0",
-                color: isActive ? "red" : "",
-                
-              };
-            }} className='post-link' to={props.url}>
-                <h2 className="post-title">
-                    {props.title}
-                </h2>
-                <h3 className="post-subtitle">
-                    {props.description}
-                </h3>
-            </NavLink> */}
-          <NavLink to="/example" className="nav_link">
+       
+          <NavLink state={{
+            //   id:props.postId,
+              title:props.title,
+              description:props.description,
+              author:props.author,
+              date:props.date
+
+          }} to={props.url} className="nav_link">
                  <p className="post-title">
                     {props.title}
                 </p>

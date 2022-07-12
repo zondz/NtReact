@@ -1,12 +1,6 @@
 *{
     box-sizing: border-box;
 }
-/* .masthead{
-
-    background-image: url('../../resources/images/bg-index.jpeg');
-    background-size: cover;
-
-} */
 .page-heading{
     font-family: 'Lora', 'Times New Roman', serif;
     text-align: center;
@@ -17,12 +11,30 @@
     font-size: 80px;
     font-weight: 40px;
     color: white;
+    margin-bottom: 8px;
+    filter: brightness(1);
 }
 .subheading{
     font-size: 24px;
     font-weight: 300px;
     font-family :"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color : white
-
-
+    color : white;
+    margin-top: 10px;
 }
+
+
+/* .header-bg>div{
+    color: white;
+}
+.header-bg{
+    position:relative;
+}
+.header-bg:before{
+    content:'';
+    position:absolute;
+    filter:brightness(0.7); 
+    background-image:url(http://imgnews.naver.net/image/001/2014/07/01/PAP20140701204901034_P2_99_20140701204206.jpg); 
+    -webkit-filter:brightness(0.7);    
+    left:0;top:0;bottom:0;right:0; 
+    z-index:-1;
+} */

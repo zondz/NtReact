@@ -35,7 +35,8 @@ function Navbar(){
 
     return (
         <>
-<nav className={`navbar navbar-expand-lg navbar-light active ${showNavbar&&window.scrollY!==0 && 'scroll-up'} ${!showNavbar && 'hidden'} `}>
+        {/* navbar-expand-lg */}
+<nav  className={`navbar active  navbar-expand-lg ${showNavbar&&window.scrollY!==0 && 'scroll-up'} ${!showNavbar && 'hidden'} `}>
  <div className="container" style={{marginLeft:"134px",marginRight:"134px",paddingLeft:"15px",paddingRight:"15px"}}>
    <a className="navbar-brand" href="#">
        <img style={{width:"150px"}} src={require('../../resources/images/ocean_logo.png')}></img>
@@ -44,7 +45,7 @@ function Navbar(){
       <span className="navbar-toggler-icon"></span>
    </button>
   <div className="collapse navbar-collapse" id="main_nav">
-	<ul className="navbar-nav ms-auto">
+	<ul className="navbar-nav ms-auto" >
 	<li className="nav-item"><Link className="nav-link" to={"/"}>Home</Link></li>
 	<li className="nav-item"><Link className="nav-link" to={"/about"}>About</Link></li>
 	<li className="nav-item"><Link className="nav-link" to={"/posts"}>Posts</Link></li>

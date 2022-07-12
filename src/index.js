@@ -6,7 +6,7 @@ import HomePage from './pages/home/HomePage';
 import AboutPage from './pages/about/AboutPage';
 import PostPage from './pages/post/PostPage';
 import ContactPage from './pages/contact/ContactPage';
-import PostdetailPage from './pages/post/PostdetailPage';
+import PostdetailPage from './pages/post/postdetail/PostdetailPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,7 +17,8 @@ root.render(
         <Route path="about" element={<AboutPage/>}/>
         <Route path="posts" element={<PostPage/>}/>
         <Route path="contact" element={<ContactPage/>}/>
-        <Route path=":postId" element={<PostdetailPage/>}/>
+        <Route path="posts/:postId" element={<PostdetailPage/>}/>
+        {/* <Route path="posts/:postId" component={(props)=>{<PostdetailPage {...props} key={window.location.pathname}/>}}/> */}
 
         <Route path="*" element={ <main style={{ padding: '1rem' }}>
             <p>There's nothing here!</p>
