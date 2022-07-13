@@ -3,6 +3,8 @@
     color: white;
     font-size: 20px;
     font-family: 'Lora', 'Times New Roman', serif;
+    filter: brightness(1);
+
 }
 .post-heading .meta{
     font-size: 20px;
@@ -10,6 +12,8 @@
     font-style: italic;
     text-align: left;
     line-height: 22px;
+    filter: brightness(1);
+
     
 }
 .post-heading .title{
@@ -18,6 +22,8 @@
     font-weight: 400;
     line-height: 66px;
     margin-bottom: 8px;
+    filter: brightness(1);
+
 
 }
 

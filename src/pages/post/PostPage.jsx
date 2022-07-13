@@ -8,10 +8,12 @@ import BackgroundImage from '../../resources/images/bg-post.jpeg'
 import { getListPostService } from "../../service"
 import { formatDateString } from "../../utils/formatDateString"
 import PageHeading from '../../components/header/heading/PageHeading'
+import { Link } from "react-router-dom"
 function PostPage(){
     const [posts,setPosts] = useState([]);
     useEffect(()=>{
         getListPostService().then(response=>{
+            console.log("test date : ",response.data)
             setPosts(response.data);
         })
     },[])
@@ -39,6 +41,9 @@ function PostPage(){
                     </div>
                 )
             })}
+
+        <Link hidden={posts.length===0} className="btn btn-primary" to={"/posts/create"}>Add post</Link>
+
 
         </ContentContainer>
         <hr></hr>

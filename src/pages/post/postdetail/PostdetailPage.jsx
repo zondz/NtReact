@@ -51,18 +51,6 @@ function PostdetailPage(){
 
     },[location])
 
-    console.log("component render")
-
-    // DOING
-    // useEffect(()=>{
-    //     console.log("params id : ",params.postId);
-    // },[location])
-
-
-    // console.log("post  : ",post)
-    // console.log("post list : ",posts);
-    // console.log("current index : ",currentIndex)
-
     const buttonClass =(currentIndex,postsLength)=>{
             if(currentIndex===-1||postsLength===0){
                 return "";
@@ -110,22 +98,10 @@ function PostdetailPage(){
           <button hidden={displayButtonClass==='btn-left-container'} className="navigate-btn" onClick={handleNext} >
           Next Post →   
            </button>
-        {/* <Link className="btn btn-primary navigate-btn"
-        to={posts.length!==0`/posts/${posts[currentIndex-1].id}:''`}
-        >
-        </Link>  */}
-
-        {/* <Link className="btn btn-primary navigate-btn" 
-        to={`/posts/${posts[currentIndex+1].id}`}
-        >
-        </Link> */}
+        
       </div>
       
     
-
-         {/* { currentIndex<posts.length-1 && <NavLink 
-        to={`/posts/${currentIndex-1}`}
-        >Next Post  →</NavLink>} */}
         
         </ContentContainer>
         <hr></hr>
