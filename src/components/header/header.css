@@ -20,15 +20,27 @@
     font-family :"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color : white;
     margin-top: 10px;
+    filter: brightness(1);
+
+}
+.header-bg{
+    position:relative;
+}
+.overlay{
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: #212529;
+    opacity: 0.5;
 }
 
 
 /* .header-bg>div{
     color: white;
 }
-.header-bg{
-    position:relative;
-}
+
 .header-bg:before{
     content:'';
     position:absolute;
