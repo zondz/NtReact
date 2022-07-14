@@ -7,9 +7,11 @@ import PageHeading from "../../../components/header/heading/PageHeading";
 import Navbar from "../../../components/navbar/Navbar";
 import BackgroundImage from "../../../resources/images/bg-post.jpeg"
 import { createtNewPost } from "../../../service";
+import { useNavigate } from "react-router-dom";
 
 let LocalDateTime = require('@js-joda/core').LocalDateTime
 function CreatePostPage(){
+    let navigate = useNavigate();
 
     const [formState,setFormState] = useState({
         authorUsername : 'author',
@@ -24,9 +26,9 @@ function CreatePostPage(){
             ...formState,
             createdAt: LocalDateTime.ofInstant(Instant.now()).toString()
         }
-        createtNewPost(submitValue).then(response=>{
-            console.log("create response : ",response);
-        })
+        createtNewPost(submitValue);
+        navigate("/posts")
+        
     }
 
     const handleChange=(event)=>{
